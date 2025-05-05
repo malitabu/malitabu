@@ -4,10 +4,216 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Enhanced Malitabu Landing Page with Products Section</title>
+    <title>Malitabu – Beauty. Wellness. Clean Spaces.</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Beauty. Wellness. Clean Spaces.</h1>
+        <p>Experience the holistic approach to beauty and wellness. Where elegance meets self-care.</p>
+        <a href="https://wa.me/+256779558005?text=Hi!%20I%20would%20like%20to%20book%20an%20appointment." class="cta-button" target="_blank" rel="noopener noreferrer">
+          Inquire via WhatsApp
+        </a>
+      </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">✂️</div>
+            <h3>Beauty Lounge</h3>
+            <p>Premium hairdressing, skincare, and makeup services.</p>
+            <a href="https://wa.me/+256779558005?text=Hi!%20I'm%20interested%20in%20Beauty%20Lounge%20services." class="service-link" target="_blank" rel="noopener noreferrer">Inquire Now</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">✨</div>
+            <h3>Hair Products</h3>
+            <p>Local, natural, and premium hair care products.</p>
+            <a href="https://wa.me/+256779558005?text=Hi!%20I'm%20interested%20in%20Hair%20Products." class="service-link" target="_blank" rel="noopener noreferrer">Inquire Now</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🏠</div>
+            <h3>Clean Living</h3>
+            <p>Home cleaning, organization, and laundry services.</p>
+            <a href="https://wa.me/+256779558005?text=Hi!%20I'm%20interested%20in%20Clean%20Living%20services." class="service-link" target="_blank" rel="noopener noreferrer">Inquire Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+      <div class="container">
+        <h2>Our Premium Products</h2>
+        <p class="section-description">Discover our curated collection of beauty essentials and fashion accessories, all designed to enhance your natural beauty.</p>
+        
+        <div class="product-categories">
+          <button class="category-button active" data-category="all">All Products</button>
+          <button class="category-button" data-category="hair">Hair & Wigs</button>
+          <button class="category-button" data-category="cosmetics">Cosmetics</button>
+          <button class="category-button" data-category="accessories">Accessories</button>
+          <button class="category-button" data-category="nails">Nail Care</button>
+        </div>
+
+        <div class="products-grid">
+          <!-- Hair & Wigs -->
+          <div class="product-card" data-category="hair">
+            <div class="product-image">
+              <img src="https://images.pexels.com/photos/2269872/pexels-photo-2269872.jpeg" alt="Natural Curly Wig">
+              <div class="bestseller-tag">Bestseller</div>
+            </div>
+            <div class="product-details">
+              <h3>Natural Curly Wig</h3>
+              <p>Premium quality human hair blend with natural curl pattern</p>
+              <div class="product-footer">
+                <span class="price">UGX 175,000</span>
+                <a href="https://wa.me/+256779558005?text=Hi!%20I'm%20interested%20in%20the%20Natural%20Curly%20Wig." class="inquire-button" target="_blank" rel="noopener noreferrer">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- More product cards for each category -->
+          <!-- Cosmetics -->
+          <div class="product-card" data-category="cosmetics">
+            <div class="product-image">
+              <img src="https://images.pexels.com/photos/2253833/pexels-photo-2253833.jpeg" alt="Radiance Foundation Set">
+              <div class="bestseller-tag">Bestseller</div>
+            </div>
+            <div class="product-details">
+              <h3>Radiance Foundation Set</h3>
+              <p>Full-coverage foundation with natural finish for all skin types</p>
+              <div class="product-footer">
+                <span class="price">UGX 95,000</span>
+                <a href="https://wa.me/+256779558005?text=Hi!%20I'm%20interested%20in%20the%20Radiance%20Foundation%20Set." class="inquire-button" target="_blank" rel="noopener noreferrer">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accessories -->
+          <div class="product-card" data-category="accessories">
+            <div class="product-image">
+              <img src="https://images.pexels.com/photos/1856111/pexels-photo-1856111.jpeg" alt="Elegant Head Wrap Set">
+              <div class="bestseller-tag">Bestseller</div>
+            </div>
+            <div class="product-details">
+              <h3>Elegant Head Wrap Set</h3>
+              <p>Set of 3 premium cotton head wraps in vibrant patterns</p>
+              <div class="product-footer">
+                <span class="price">UGX 65,000</span>
+                <a href="https://wa.me/+256779558005?text=Hi!%20I'm%20interested%20in%20the%20Elegant%20Head%20Wrap%20Set." class="inquire-button" target="_blank" rel="noopener noreferrer">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nail Care -->
+          <div class="product-card" data-category="nails">
+            <div class="product-image">
+              <img src="https://images.pexels.com/photos/3997393/pexels-photo-3997393.jpeg" alt="Professional Gel Polish Kit">
+              <div class="bestseller-tag">Bestseller</div>
+            </div>
+            <div class="product-details">
+              <h3>Professional Gel Polish Kit</h3>
+              <p>Complete set with LED lamp and 6 premium gel colors</p>
+              <div class="product-footer">
+                <span class="price">UGX 115,000</span>
+                <a href="https://wa.me/+256779558005?text=Hi!%20I'm%20interested%20in%20the%20Professional%20Gel%20Polish%20Kit." class="inquire-button" target="_blank" rel="noopener noreferrer">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages">
+      <div class="container">
+        <h2>Featured Packages</h2>
+        <div class="packages-grid">
+          <div class="package-card">
+            <h3>Pamper & Polish</h3>
+            <p>Hair and skin care combo for a complete refresh.</p>
+            <ul>
+              <li>Hair consultation and styling</li>
+              <li>Deep conditioning treatment</li>
+              <li>Facial cleanse and mask</li>
+              <li>Take-home mini product</li>
+            </ul>
+            <a href="https://wa.me/+256779558005?text=Hi!%20I'm%20interested%20in%20the%20Pamper%20%26%20Polish%20package." class="package-button" target="_blank" rel="noopener noreferrer">Inquire Now</a>
+          </div>
+          <div class="package-card featured">
+            <div class="featured-tag">Most Popular</div>
+            <h3>Glow & Go</h3>
+            <p>Quick styling and product bundle.</p>
+            <ul>
+              <li>Express hair styling</li>
+              <li>Product consultation</li>
+              <li>Curated product bundle</li>
+              <li>Quick skin refresh</li>
+            </ul>
+            <a href="https://wa.me/+256779558005?text=Hi!%20I'm%20interested%20in%20the%20Glow%20%26%20Go%20package." class="package-button" target="_blank" rel="noopener noreferrer">Inquire Now</a>
+          </div>
+          <div class="package-card">
+            <h3>Serenity Clean</h3>
+            <p>Home cleaning while you enjoy salon services.</p>
+            <ul>
+              <li>Complete home cleaning</li>
+              <li>Laundry service</li>
+              <li>Space organization</li>
+            </ul>
+            <a href="https://wa.me/+256779558005?text=Hi!%20I'm%20interested%20in%20the%20Serenity%20Clean%20package." class="package-button" target="_blank" rel="noopener noreferrer">Inquire Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="brand">
+            <div class="logo">M</div>
+            <span class="brand-name">Malitabu</span>
+          </div>
+          <p class="tagline">Beauty. Wellness. Clean Spaces.</p>
+          <div class="contact-info">
+            <p>Main Rd, Tororo</p>
+            <p><a href="tel:+256779558005">0779-558-005</a></p>
+            <p><a href="mailto:info@malitabu.com">info@malitabu.com</a></p>
+          </div>
+          <p class="copyright">© 2024 Malitabu. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const categoryButtons = document.querySelectorAll('.category-button');
+        const productCards = document.querySelectorAll('.product-card');
+
+        categoryButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            categoryButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            button.classList.add('active');
+
+            const category = button.dataset.category;
+
+            productCards.forEach(card => {
+              if (category === 'all' || card.dataset.category === category) {
+                card.style.display = 'block';
+              } else {
+                card.style.display = 'none';
+              }
+            });
+          });
+        });
+      });
+    </script>
   </body>
 </html>
